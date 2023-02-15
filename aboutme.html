@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUTME#?.TXT</title>
+    <style>
+        .listItem{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    ABOUT ME <br> <br>
+
+    <ul>
+        <li> NICKNAME: <span id="name"></span></li>
+        <li> FAVORITES: <span id="favorites"></span></li>
+        <li> HOME TOWN: <span id="homeTown"></span></li>
+    </ul>
+
+    <script>
+        document.body.style.fontFamily = "Arial, sans-serif"
+        document.getElementById("name").innerHTML = "JESUS";
+        document.getElementById("favorites").innerHTML = "HOBBIES";
+        document.getElementById("homeTown").innerHTML = "MEXICO";
+        var liList = document.querySelectorAll("li");
+
+        for(var i = 0; i < liList.length; i++){
+            liList[i].className = "listItem"
+        }
+
+        var img = document.createElement("img");
+        img.src = "https://www.verywellhealth.com/thmb/xLXNCr05QpuZVKEE5jLlS6l8PzA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/mrsa-colonies-on-blood-agar-plate-142922730-5bd089d146e0fb002635749b.jpg";
+        img.style.width = "50px";
+        document.body.appendChild(img);
+    </script>
+</body>
+</html>
